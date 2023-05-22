@@ -28,6 +28,7 @@ const SignUp = () => {
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <div className="card-body">
             <h1 className="text-3xl text-center font-bold">Sign up</h1>
+
             <form onSubmit={handleSignUp}>
             <div className="form-control">
               <label className="label">
@@ -58,7 +59,7 @@ const SignUp = () => {
             </form>
             <p className="my-4 text-center">
               Already have an account?{" "}
-              <Link className="text-orange-600 font-bold" to="/login">
+              <Link to="/login" className="text-orange-600 font-bold">
                 Login
               </Link>
             </p>

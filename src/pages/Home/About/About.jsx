@@ -12,7 +12,6 @@ const About = () => {
           <p className="py-6 w-4/5 text-xl text-[#737373]">
           A model car, or toy car, is a miniature representation of an automobile. Other miniature motor vehicles, such as trucks, buses, or even ATVs, etc. are often included in this general category.
           </p>         
-          <button className="btn bg-orange-500 border-0">Get More Info</button>
         </div>
       </div>
     </div>

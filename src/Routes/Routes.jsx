@@ -5,6 +5,7 @@ import About from '../pages/Home/About/About';
 import Toycars from '../pages/Home/Toys/toycars';
 import Login from '../pages/Home/Login/Login';
 import SignUp from '../pages/Home/SignUp/SignUp';
+import BookOrder from '../pages/BookOrder/BookOrder';
 
 
 
@@ -22,6 +23,10 @@ import SignUp from '../pages/Home/SignUp/SignUp';
                     element: <About></About>
                 },
                 {
+                    path: 'toycars',
+                    element: <Toycars></Toycars>
+                },
+                {
                     path: 'login',
                     element: <Login></Login>
                 },
@@ -30,8 +35,9 @@ import SignUp from '../pages/Home/SignUp/SignUp';
                     element: <SignUp></SignUp>
                 },
                 {
-                    path: '/toycars',
-                    element: <Toycars></Toycars>
+                    path: 'bookorder/:id',
+                    element: <BookOrder></BookOrder>,
+                    loader: ({params}) => fetch(`http://localhost:5000/servicse/${params.id}`)
                 }
             ]
         }

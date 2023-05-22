@@ -1,9 +1,10 @@
 import { FaStar } from "@react-icons/all-files/fa/FaStar";
+import { Link } from "react-router-dom";
 
 
 const ToyCar = ({toycar}) => {
 
-    const { name, title, img, price } = toycar;
+    const {_id, name, title, img, price } = toycar;
 
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
@@ -23,7 +24,9 @@ const ToyCar = ({toycar}) => {
         <FaStar/>
         </div>
         </div>
+          <Link to={`bookorder/${_id}`}>
           <button className="btn bg-green-500 hover:bg-green-700 border-none">Order Now</button>
+          </Link>
        
       </div>
     </div>
